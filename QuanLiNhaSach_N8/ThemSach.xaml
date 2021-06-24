@@ -1,0 +1,39 @@
+﻿<Window x:Class="QuanLyNhaSach.ThemSach"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:QuanLyNhaSach"
+        mc:Ignorable="d"
+        Title="Thêm sách" Height="600" Width="800" WindowStartupLocation="CenterScreen" ResizeMode="NoResize">
+    <Canvas>
+        <Label Name="lblTitle" Content="THÊM SÁCH" HorizontalContentAlignment="Center" Height="50"
+               Width="400" Canvas.Top="14" Canvas.Left="138" FontSize="23" FontWeight="Bold" Foreground="Blue">
+        </Label>
+
+        <Label Name="lbl1" Height="40" Width="150" Canvas.Left="80" Canvas.Top="80" FontSize="17">Tên sách</Label>
+        <Label Name="lbl2" Height="40" Width="150" Canvas.Left="80" Canvas.Top="130" FontSize="17">Tác giả</Label>
+        <Label Name="lbl3" Height="40" Width="150" Canvas.Left="80" Canvas.Top="180" FontSize="17">Thể loại</Label>
+        <Label Name="lbl4" Height="40" Width="150" Canvas.Left="80" Canvas.Top="230" FontSize="17">Nhà xuất bản</Label>
+        <Label Name="lbl5" Height="40" Width="150" Canvas.Left="80" Canvas.Top="280" FontSize="17">Năm xuất bản</Label>
+        <Label Name="lbl6" Height="40" Width="150" Canvas.Left="80" Canvas.Top="330" FontSize="17">Giá bán</Label>
+        <Label Name="lbl7" Height="40" Width="150" Canvas.Left="80" Canvas.Top="380" FontSize="17">Số lượng</Label>
+
+        <TextBox Name="txt1" Height="30" Width="400" Canvas.Left="230" Canvas.Top="80" Background="LightSkyBlue" FontSize="17"></TextBox>
+        <TextBox Name="txt2" Height="30" Width="400" Canvas.Left="230" Canvas.Top="130" Background="LightSkyBlue" FontSize="17"></TextBox>
+        <TextBox Name="txt3" Height="30" Width="400" Canvas.Left="230" Canvas.Top="180" Background="LightSkyBlue" FontSize="17"></TextBox>
+        <TextBox Name="txt4" Height="30" Width="400" Canvas.Left="230" Canvas.Top="230" Background="LightSkyBlue" FontSize="17"></TextBox>
+        <TextBox Name="txt5" Height="30" Width="400" Canvas.Left="230" Canvas.Top="280" Background="LightSkyBlue" FontSize="17">2019</TextBox>
+        <TextBox Name="txt6" Height="30" Width="400" Canvas.Left="230" Canvas.Top="330" Background="LightSkyBlue" FontSize="17">0</TextBox>
+        <TextBox Name="txt7" Height="30" Width="400" Canvas.Left="230" Canvas.Top="380" Background="LightSkyBlue" FontSize="17">0</TextBox>
+
+
+        <Button Name="btnOK" Click="BtnOK_Click" Height="40" Width="100" FontSize="23" Foreground="Red"
+                Canvas.Top="460" Canvas.Left="170">_Thêm
+        </Button>
+
+        <Button Name="btnCancel" Click="BtnCancel_Click" Height="40" Width="100" FontSize="23" Foreground="Red"
+                Canvas.Top="460" Canvas.Left="370">_Hủy bỏ
+        </Button>
+    </Canvas>
+</Window>

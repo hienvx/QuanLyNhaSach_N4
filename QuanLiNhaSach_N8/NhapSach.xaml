@@ -1,0 +1,31 @@
+﻿<Window x:Class="QuanLyNhaSach.NhapSach"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:QuanLyNhaSach"
+        mc:Ignorable="d"
+        Title="Nhập sách" Height="600" Width="800" WindowStartupLocation="CenterScreen" Loaded="Window_Loaded" ResizeMode="NoResize">
+    <Canvas>
+
+        <Label Name="lblTitle" Content="NHẬP SÁCH" HorizontalContentAlignment="Center" Height="50"
+               Width="400" Canvas.Top="14" Canvas.Left="138" FontSize="23" FontWeight="Bold" Foreground="Blue">
+        </Label>
+
+        <Label Name="lbl1" Height="40" Width="150" Canvas.Left="80" Canvas.Top="80" FontSize="17">Mã phiếu nhập</Label>
+        <Label Name="lbl2" Height="40" Width="150" Canvas.Left="80" Canvas.Top="130" FontSize="17">Ngày nhập</Label>
+        <Label Name="lbl3" Height="40" Width="150" Canvas.Left="80" Canvas.Top="180" FontSize="17">Mã nhân viên</Label>
+
+        <Label Name="lbl11" Height="40" Width="250" Canvas.Left="280" Canvas.Top="80" FontSize="17" FontWeight="Bold">PN001</Label>
+        <Label Name="lbl21" Height="40" Width="250" Canvas.Left="280" Canvas.Top="130" FontSize="17" FontWeight="Bold">01/01/2019</Label>
+        <Label Name="lbl31" Height="40" Width="250" Canvas.Left="280" Canvas.Top="180" FontSize="17" FontWeight="Bold">NV001</Label>
+
+        <Button Name="btnOK" Click="BtnOK_Click" Height="40" Width="150" FontSize="23" Foreground="Red"
+                Canvas.Top="260" Canvas.Left="170">_Tạo P.Nhập
+        </Button>
+
+        <Button Name="btnCancel" Click="BtnCancel_Click" Height="40" Width="150" FontSize="23" Foreground="Red"
+                Canvas.Top="260" Canvas.Left="370">_Hủy bỏ
+        </Button>
+    </Canvas>
+</Window>

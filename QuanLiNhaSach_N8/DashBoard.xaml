@@ -1,0 +1,182 @@
+﻿<Window x:Class="QuanLyNhaSach.DashBoard"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:QuanLyNhaSach"
+        mc:Ignorable="d"
+        Title="DashBoard" Height="600" Width="800" WindowStartupLocation="CenterScreen" Background="LightBlue" Loaded="Window_Loaded" ResizeMode="NoResize">
+    <Canvas>
+
+        <Label Name="lblTitle" Height="40" Width="600" Canvas.Left="100" Canvas.Top="50"
+               FontSize="23" FontWeight="Bold" HorizontalContentAlignment="Center" Content="Xin chào admin, mời chọn chức năng">
+        </Label>
+
+        <Label Name="lblTitle1" Height="40" Width="600" Canvas.Left="100" Canvas.Top="120" Foreground="Red"
+               FontSize="17" FontWeight="Bold" HorizontalContentAlignment="Center" Content="Nhóm chức năng bán hàng">
+        </Label>
+
+        <UniformGrid Columns="5" Width="750" Height="100" Canvas.Top="150" Canvas.Left="25">
+            <Border BorderBrush="Black" BorderThickness="1">
+                <Canvas Background="White" Width="148">
+                    <Image Name="imgTimKiem" Height="50" Width="50" Canvas.Top="10" Canvas.Left="49"
+                           Source="/iconFeature/TimKiem.png">
+                    </Image>
+                    <Button Name="btnTimKiem" Height="25" Width="68" Canvas.Top="50" Canvas.Left="30"
+                            Click="BtnTimKiem_Click">Tìm sách
+                    </Button>
+                </Canvas>
+            </Border>
+            
+            <Border BorderBrush="Black" BorderThickness="1">
+                <Canvas Background="White" Width="148">
+                    <Image Name="imgNhapSach" Height="50" Width="50" Canvas.Top="10" Canvas.Left="49"
+                           Source="/iconFeature/NhapSach.png">
+                    </Image>
+                    <Button Name="btnNhapSach" Height="25" Width="88" Canvas.Top="50" Canvas.Left="20"
+                            Click="BtnNhapSach_Click">Nhập sách
+                    </Button>
+                </Canvas>
+            </Border>
+            <Border BorderBrush="Black" BorderThickness="1">
+                <Canvas Background="White" Width="148">
+                    <Image Name="imgXemPhieuNhapSach" Height="50" Width="50" Canvas.Top="10" Canvas.Left="49"
+                           Source="/iconFeature/XemPhieuNhapSach.png">
+                    </Image>
+                    <Button Name="btnXemPhieuNhapSach" Height="25" Width="88" Canvas.Top="50" Canvas.Left="20"
+                            Click="BtnXemPhieuNhapSach_Click">Xem phiếu nhập
+                    </Button>
+                </Canvas>
+            </Border>
+            <Border BorderBrush="Black" BorderThickness="1">
+                <Canvas Background="White" Width="148">
+                    <Image Name="imgBanSach" Height="50" Width="50" Canvas.Top="10" Canvas.Left="49"
+                           Source="/iconFeature/BanSach.png">
+                    </Image>
+                    <Button Name="btnBanSach" Height="25" Width="88" Canvas.Top="50" Canvas.Left="20"
+                            Click="BtnBanSach_Click">Bán sách
+                    </Button>
+                </Canvas>
+            </Border>
+            <Border BorderBrush="Black" BorderThickness="1">
+                <Canvas Background="White" Width="148">
+                    <Image Name="imgHoaDon" Height="50" Width="50" Canvas.Top="10" Canvas.Left="49"
+                           Source="/iconFeature/HoaDon.png">
+                    </Image>
+                    <Button Name="btnHoaDon" Height="25" Width="88" Canvas.Top="50" Canvas.Left="20"
+                            Click="BtnHoaDon_Click">Xem hóa đơn
+                    </Button>
+                </Canvas>
+            </Border>
+        </UniformGrid>
+
+        <Label Name="lblTitle2" Height="40" Width="600" Canvas.Left="100" Canvas.Top="270" Foreground="Red"
+               FontSize="17" FontWeight="Bold" HorizontalContentAlignment="Center" Content="Nhóm chức năng thống kê">
+        </Label>
+
+        <UniformGrid Columns="5" Width="750" Height="100" Canvas.Top="300" Canvas.Left="25">
+            <Border BorderBrush="Black" BorderThickness="1">
+                <Canvas Background="White" Width="148">
+                    <Image Name="imgDanhSachTaiKhoan" Height="50" Width="50" Canvas.Top="10" Canvas.Left="49"
+                           Source="/iconFeature/DanhSachTaiKhoan.png">
+                    </Image>
+                    <Button Name="btnDanhSachTaiKhoan" Height="25" Width="88" Canvas.Top="50" Canvas.Left="20"
+                            Click="BtnDanhSachTaiKhoan_Click">DS tài khoản
+                    </Button>
+                </Canvas>
+            </Border>
+            <Border BorderBrush="Black" BorderThickness="1">
+                <Canvas Background="White" Width="148">
+                    <Image Name="imgDanhSachKhachHang" Height="50" Width="50" Canvas.Top="10" Canvas.Left="49"
+                           Source="/iconFeature/DanhSachKhachHang.png">
+                    </Image>
+                    <Button Name="btnDanhSachKhachHang" Height="25" Width="88" Canvas.Top="50" Canvas.Left="20"
+                            Click="BtnDanhSachKhachHang_Click">DS khách hàng
+                    </Button>
+                </Canvas>
+            </Border>
+            <Border BorderBrush="Black" BorderThickness="1">
+                <Canvas Background="White" Width="148">
+                    <Image Name="imgDanhSachSach" Height="50" Width="50" Canvas.Top="10" Canvas.Left="49"
+                           Source="/iconFeature/DanhSachSach.png">
+                    </Image>
+                    <Button Name="btnDanhSachSach" Height="25" Width="88" Canvas.Top="50" Canvas.Left="20"
+                            Click="BtnDanhSachSach_Click">DS sách
+                    </Button>
+                </Canvas>
+            </Border>
+            <Border BorderBrush="Black" BorderThickness="1">
+                <Canvas Background="White" Width="148">
+                    <Image Name="imgDanhSachNhanVien" Height="50" Width="50" Canvas.Top="10" Canvas.Left="49"
+                           Source="/iconFeature/DanhSachNhanVien.png">
+                    </Image>
+                    <Button Name="btnDanhSachNhanVien" Height="25" Width="88" Canvas.Top="50" Canvas.Left="20"
+                            Click="BtnDanhSachNhanVien_Click">DS nhân viên
+                    </Button>
+                </Canvas>
+            </Border>
+            <Border BorderBrush="Black" BorderThickness="1">
+                <Canvas Background="White" Width="148">
+                    <Image Name="imgTKNgay" Height="50" Width="50" Canvas.Top="10" Canvas.Left="49"
+                           Source="/iconFeature/TKNgay.png">
+                    </Image>
+                    <Button Name="btnThongKeNgay" Height="25" Width="88" Canvas.Top="50" Canvas.Left="20"
+                            Click="btnThongKeNgay_Click">TK theo ngày
+                    </Button>
+                </Canvas>
+            </Border>
+        </UniformGrid>
+
+        <Label Name="lblTitle3" Height="40" Width="600" Canvas.Left="100" Canvas.Top="420" Foreground="Red"
+               FontSize="17" FontWeight="Bold" HorizontalContentAlignment="Center" Content="Nhóm chức năng khác">
+        </Label>
+
+        <UniformGrid Columns="5" Width="750" Height="100" Canvas.Top="450" Canvas.Left="25">
+            <Border BorderBrush="Black" BorderThickness="1">
+                <Canvas Background="White" Width="148">
+                    <Image Name="imgDangKi" Height="50" Width="50" Canvas.Top="10" Canvas.Left="49"
+                           Source="/iconFeature/DangKi.png">
+                    </Image>
+                    <Button Name="btnDangKI" Height="25" Width="68" Canvas.Top="50" Canvas.Left="30"
+                            Click="BtnDangKI_Click">Đăng kí
+                    </Button>
+                </Canvas>
+            </Border>
+            <Border BorderBrush="Black" BorderThickness="1">
+                <Canvas Background="White" Width="148">
+                    <Image Name="imgThemSach" Height="50" Width="50" Canvas.Top="10" Canvas.Left="49"
+                           Source="/iconFeature/ThemSach.png">
+                    </Image>
+                    <Button Name="btnThemSach" Height="25" Width="68" Canvas.Top="50" Canvas.Left="30"
+                            Click="BtnThemSach_Click">Thêm sách
+                    </Button>
+                </Canvas>
+            </Border>
+            <Border BorderBrush="Black" BorderThickness="1">
+                <Canvas Background="White" Width="148">
+                    <Image Name="imgThemKhachHang" Height="50" Width="50" Canvas.Top="10" Canvas.Left="49"
+                           Source="/iconFeature/ThemKhachHang.png">
+                    </Image>
+                    <Button Name="btnThemKhachHang" Height="25" Width="68" Canvas.Top="50" Canvas.Left="30"
+                            Click="BtnThemKhachHang_Click">Thêm KH
+                    </Button>
+                </Canvas>
+            </Border>
+            <Border BorderBrush="Black" BorderThickness="1">
+                <Canvas Background="White" Width="148">
+                    <Image Name="imgDangXuat" Height="50" Width="50" Canvas.Top="10" Canvas.Left="49"
+                           Source="/iconFeature/DangXuat.png">
+                    </Image>
+                    <Button Name="btnDangXuat" Height="25" Width="68" Canvas.Top="50" Canvas.Left="30"
+                            Click="BtnDangXuat_Click">Đăng xuất
+                    </Button>
+                </Canvas>
+            </Border>
+            <Border BorderBrush="Black" BorderThickness="1">
+                <Canvas Background="White" Width="148">
+                </Canvas>
+            </Border>
+        </UniformGrid>
+        
+    </Canvas>
+</Window>

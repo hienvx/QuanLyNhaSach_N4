@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="16d57f4996de4d73b4ae7f848f32e74c" Name="Diagram1">
+        <EntityTypeShape EntityType="BOOKModel.ChiTietHoaDon" Width="1.5" PointX="5.25" PointY="2.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="BOOKModel.ChiTietPhieuNhapSach" Width="1.5" PointX="5.25" PointY="6.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="BOOKModel.HoaDon" Width="1.5" PointX="3" PointY="2.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="BOOKModel.KhachHang" Width="1.5" PointX="0.75" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="BOOKModel.NhanVien" Width="1.5" PointX="0.75" PointY="4.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="BOOKModel.PhieuNhapSach" Width="1.5" PointX="3" PointY="6.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="BOOKModel.Sach" Width="1.5" PointX="3" PointY="13.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="BOOKModel.TaiKhoan" Width="1.5" PointX="3" PointY="9.75" IsExpanded="true" />
+        <AssociationConnector Association="BOOKModel.FK_ChiTietHoaDon_HoaDon" ManuallyRouted="false" />
+        <AssociationConnector Association="BOOKModel.FK_ChiTietHoaDon_Sach" ManuallyRouted="false" />
+        <AssociationConnector Association="BOOKModel.FK_ChiTietPhieuNhapSach_PhieuNhapSach" ManuallyRouted="false" />
+        <AssociationConnector Association="BOOKModel.FK_ChiTietPhieuNhapSach_Sach" ManuallyRouted="false" />
+        <AssociationConnector Association="BOOKModel.FK_HoaDon_KhachHang" ManuallyRouted="false" />
+        <AssociationConnector Association="BOOKModel.FK_HoaDon_NhanVien" ManuallyRouted="false" />
+        <AssociationConnector Association="BOOKModel.FK_PhieuNhapSach_NhanVien1" ManuallyRouted="false" />
+        <AssociationConnector Association="BOOKModel.FK_TaiKhoan_NhanVien" ManuallyRouted="false" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

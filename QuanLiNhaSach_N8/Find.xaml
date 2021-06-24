@@ -1,0 +1,44 @@
+﻿<Window x:Class="QuanLyNhaSach.Find"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:QuanLyNhaSach"
+        mc:Ignorable="d"
+        Title="Tìm sách" Height="600" Width="800" WindowStartupLocation="CenterScreen" Background="LightCyan" ResizeMode="NoResize">
+    <Canvas>
+        <Label Name="lblTitle"  Content="CHỨC NĂNG TÌM KIẾM SÁCH" Height="40" Width="600" FontSize="23" FontWeight="Bold"
+               HorizontalContentAlignment="Center" Canvas.Left="100" Canvas.Top="30" Foreground="Blue">
+        </Label>
+        <Label Name="lbl1"  Content="Bạn muốn tìm gì?" Height="40" Width="600" FontSize="20"
+               HorizontalContentAlignment="Center" Canvas.Left="100" Canvas.Top="80" Foreground="Gray" FontStyle="Italic">
+        </Label>
+
+        <CheckBox Name="cbName" Height="20" Width="20" Canvas.Left="50" Canvas.Top="192" IsChecked="False" Checked="cbName_Checked" Unchecked="cbName_Unchecked"></CheckBox>
+        <Label Name="lblName"  Content="Theo tên" Height="40" Width="150" FontSize="20"
+               HorizontalContentAlignment="Left" Canvas.Left="80" Canvas.Top="180" Foreground="Black">
+        </Label>
+        <TextBox Name="txtName" Height="30" Width="350" Background="White"  Foreground="Black" FontSize="20"
+                 HorizontalContentAlignment="Left" Canvas.Left="250" Canvas.Top="185" GotFocus="TxtName_GotFocus">
+        </TextBox>
+        <CheckBox Name="cbAuthor" Height="20" Width="20" Canvas.Left="50" Canvas.Top="242" IsChecked="False" Checked="cbAuthor_Checked" Unchecked="cbAuthor_Unchecked"></CheckBox>
+        <Label Name="lblAuthor"  Content="Theo tác giả" Height="40" Width="150" FontSize="20"
+               HorizontalContentAlignment="Left" Canvas.Left="80" Canvas.Top="230" Foreground="Black">
+        </Label>
+        <TextBox Name="txtAuthor" Height="30" Width="350" Background="White"  Foreground="Black" FontSize="20"
+                 HorizontalContentAlignment="Left" Canvas.Left="250" Canvas.Top="235" GotFocus="TxtAuthor_GotFocus">
+        </TextBox>
+        <CheckBox Name="cbYear" Height="20" Width="20" Canvas.Left="50" Canvas.Top="292" IsChecked="False" Checked="cbYear_Checked" Unchecked="cbYear_Unchecked"></CheckBox>
+        <Label Name="lblYear"  Content="Theo năm" Height="40" Width="150" FontSize="20"
+               HorizontalContentAlignment="Left" Canvas.Left="80" Canvas.Top="280" Foreground="Black">
+        </Label>
+        <TextBox Name="txtYear" Height="30" Width="350" Background="White"  Foreground="Black" FontSize="20"
+                 HorizontalContentAlignment="Left" Canvas.Left="250" Canvas.Top="285" GotFocus="TxtYear_GotFocus">
+        </TextBox>
+
+        <Button Name="btnSearch" Height="40" Width="100" FontSize="20" Foreground="Red" FontWeight="Bold"
+                Canvas.Left="200" Canvas.Top="400" Click="btnSearch_Click">_Tìm kiếm</Button>
+        <Button Name="btnCancel" Height="40" Width="100" FontSize="20" Foreground="Red" FontWeight="Bold"
+                Canvas.Left="420" Canvas.Top="400" Click="BtnCancel_Click">_Hủy bỏ</Button>
+    </Canvas>
+</Window>

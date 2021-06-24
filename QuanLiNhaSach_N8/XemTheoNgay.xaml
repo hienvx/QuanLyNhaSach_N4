@@ -1,0 +1,17 @@
+﻿<Window x:Class="QuanLyNhaSach.XemTheoNgay"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:QuanLyNhaSach"
+        mc:Ignorable="d"
+        Title="Xem theo ngày" Height="600" Width="800" WindowStartupLocation="CenterScreen" ResizeMode="NoResize">
+    <Canvas>
+        <Label Content="THỐNG KÊ THEO NGÀY" HorizontalContentAlignment="Center" Height="50"
+               Width="300" FontSize="23" FontWeight="Bold" Foreground="Blue" Canvas.Left="212" Canvas.Top="20" ></Label>
+        <Label Content="Xin mời nhập ngày" Canvas.Left="220" Canvas.Top="90" FontSize="15" FontWeight="Bold" Foreground="BlueViolet"></Label>
+        <Button Content="Thống kê" Name="TKNgay" Width="70" Height="30" Click="TKNgay_Click" Canvas.Left="250" Margin="0" Canvas.Top="171"></Button>
+        <Button Content="Thoát" Name="ThoatTr" Click="ThoatTr_Click" Canvas.Left="426" Margin="0" Canvas.Top="171" Height="30"></Button>
+        <DatePicker Name="pickerNgay" Canvas.Left="404" Canvas.Top="90"/>
+    </Canvas>
+</Window>
