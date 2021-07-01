@@ -33,5 +33,6 @@ namespace QuanLyNhaSach
         public virtual DbSet<PhieuNhapSach> PhieuNhapSaches { get; set; }
         public virtual DbSet<Sach> Saches { get; set; }
         public virtual DbSet<TaiKhoan> TaiKhoans { get; set; }
+        public virtual DbSet<QuiDinh> QuiDinhs { get; set; }
     }
 }

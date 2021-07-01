@@ -137,6 +137,9 @@
     <Compile Include="PhieuNhapSachDetail.xaml.cs">
       <DependentUpon>PhieuNhapSachDetail.xaml</DependentUpon>
     </Compile>
+    <Compile Include="QuiDinh.cs">
+      <DependentUpon>BookEntity.tt</DependentUpon>
+    </Compile>
     <Compile Include="Result.xaml.cs">
       <DependentUpon>Result.xaml</DependentUpon>
     </Compile>
